@@ -39,7 +39,7 @@ const SubmissionPanel = ({ setQuestions }) => {
     try {
       setIsLoading(true);
       const response = await fetch(
-        "https://ou264.sse.codesandbox.io/process?" +
+        "https://cogwork.herokuapp.com/process?" +
           new URLSearchParams({ question, imageURL })
       );
       const responseData = await response.json();
